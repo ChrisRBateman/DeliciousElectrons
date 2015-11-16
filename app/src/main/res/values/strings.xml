@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Delicious Electrons</string>
+    <string name="action_settings">Settings</string>
+	<string name="enter_msg">Enter message</string>
+	<string name="save_msg">Save Message</string>
+	<string name="test">Test</string>
+	<string name="msg_saved">Message Saved</string>
+	<string name="msg_blank">The text field is empty</string>
+	<string name="ok_text">OK</string>
+	<string name="next_text">Next</string>
+	<string name="default_power_connected_msg">yummy electrons</string>
+	<string name="image_desc">image</string>
+	
+	<string name="tutorial">Tutorial</string>
+	<string name="tutorial_enter_msg_title">Step 1</string>
+	<string name="tutorial_enter_msg_desc">Enter a message into this text field.</string>
+	<string name="tutorial_save_msg_title">Step 2</string>
+	<string name="tutorial_save_msg_desc">Tap the \'Save Message\' button to save message.</string>
+    <string name="tutorial_test_msg_title">Step 3</string>
+    <string name="tutorial_test_msg_desc">Tap the \'Test\' button (optional) to hear message.</string>
+	<string name="tutorial_hear_msg_title">Final Step</string>
+	<string name="tutorial_hear_msg_desc">You will now hear the message whenever the charger cord is plugged in.</string>
+	    
+</resources>
