@@ -57,7 +57,9 @@ public class DeliciousElectronsActivity extends AppCompatActivity implements
 		
 		mSaveButton.setOnClickListener(this);
         mTestButton.setOnClickListener(this);
-        tutorialButton.setOnClickListener(this);
+		if (tutorialButton != null) {
+            tutorialButton.setOnClickListener(this);
+        }
         mMsgEditText.addTextChangedListener(this);
         mClearImageView.setOnClickListener(this);
 

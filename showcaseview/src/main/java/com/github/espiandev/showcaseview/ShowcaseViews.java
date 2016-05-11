@@ -7,9 +7,10 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 import java.util.List;
 
+@SuppressWarnings("unused")
 public class ShowcaseViews {
 
-    private final List<ShowcaseView> views = new ArrayList<ShowcaseView>();
+    private final List<ShowcaseView> views = new ArrayList<>();
     private final Activity activity;
     private final int showcaseTemplateId;
     private OnShowcaseAcknowledged showcaseAcknowledgedListener = new OnShowcaseAcknowledged() {

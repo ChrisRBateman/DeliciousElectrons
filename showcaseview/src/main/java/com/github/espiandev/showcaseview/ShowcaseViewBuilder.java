@@ -3,6 +3,7 @@ package com.github.espiandev.showcaseview;
 import android.app.Activity;
 import android.view.View;
 
+@SuppressWarnings("unused")
 public class ShowcaseViewBuilder {
 
     private final ShowcaseView showcaseView;

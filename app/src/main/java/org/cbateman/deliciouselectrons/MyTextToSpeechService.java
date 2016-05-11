@@ -40,6 +40,7 @@ public class MyTextToSpeechService extends Service implements OnInitListener {
 	}
 	
 	@Override
+	@SuppressWarnings("deprecation")
 	public int onStartCommand(Intent intent, int flags, int startId) {
         if (BuildConfig.DEBUG) {
             Log.d(TAG, "MyTextToSpeechService.onStartCommand :  intent > " + intent);
