@@ -21,7 +21,7 @@ public class MyTextToSpeechService extends Service implements OnInitListener {
 	@Override
 	public void onCreate() {
 		if (BuildConfig.DEBUG) {
-			Log.d(TAG, "MyTextToSpeechService.onCreate");
+			Log.i(TAG, "MyTextToSpeechService.onCreate");
 		}
 
 		mTextToSpeechInitialized = false;
@@ -31,7 +31,7 @@ public class MyTextToSpeechService extends Service implements OnInitListener {
 	@Override
 	public void onInit(int status) {
         if (BuildConfig.DEBUG) {
-            Log.d(TAG, "MyTextToSpeechService.onInit : status > " + status);
+            Log.i(TAG, "MyTextToSpeechService.onInit : status > " + status);
         }
 
 		if (status == TextToSpeech.SUCCESS) {
@@ -43,16 +43,16 @@ public class MyTextToSpeechService extends Service implements OnInitListener {
 	@SuppressWarnings("deprecation")
 	public int onStartCommand(Intent intent, int flags, int startId) {
         if (BuildConfig.DEBUG) {
-            Log.d(TAG, "MyTextToSpeechService.onStartCommand :  intent > " + intent);
-            Log.d(TAG, "MyTextToSpeechService.onStartCommand :   flags > " + flags);
-            Log.d(TAG, "MyTextToSpeechService.onStartCommand : startId > " + startId);
+            Log.i(TAG, "MyTextToSpeechService.onStartCommand :  intent > " + intent);
+            Log.i(TAG, "MyTextToSpeechService.onStartCommand :   flags > " + flags);
+            Log.i(TAG, "MyTextToSpeechService.onStartCommand : startId > " + startId);
         }
 
         if (intent != null) {
             String msg = intent.getStringExtra(POWER_CONNECTED_KEY);
 
             if (BuildConfig.DEBUG) {
-                Log.d(TAG, "MyTextToSpeechService.onStartCommand : msg > " + msg);
+                Log.i(TAG, "MyTextToSpeechService.onStartCommand : msg > " + msg);
             }
 
             if (msg != null) {
@@ -70,7 +70,7 @@ public class MyTextToSpeechService extends Service implements OnInitListener {
 	@Override
 	public IBinder onBind(Intent intent) {
         if (BuildConfig.DEBUG) {
-            Log.d(TAG, "MyTextToSpeechService.onBind");
+            Log.i(TAG, "MyTextToSpeechService.onBind");
         }
 
 		return null;
@@ -79,7 +79,7 @@ public class MyTextToSpeechService extends Service implements OnInitListener {
 	@Override
 	public void onDestroy() {
         if (BuildConfig.DEBUG) {
-            Log.d(TAG, "MyTextToSpeechService.onDestroy");
+            Log.i(TAG, "MyTextToSpeechService.onDestroy");
         }
 
 		if (mTextToSpeech != null) {

@@ -9,6 +9,7 @@ import android.util.Log;
 /**
  * BroadcastReceiver class to receive charger connect/disconnect messages.
  */
+@SuppressWarnings("ConstantConditions")
 public class PowerConnectionReceiver extends BroadcastReceiver {
 	public static final String TAG = DeliciousElectronsActivity.TAG;
 	public static final String POWER_CONNECTED_KEY = DeliciousElectronsActivity.POWER_CONNECTED_KEY;

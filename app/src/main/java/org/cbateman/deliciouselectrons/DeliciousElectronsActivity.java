@@ -42,18 +42,18 @@ public class DeliciousElectronsActivity extends AppCompatActivity implements
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		if (BuildConfig.DEBUG) {
-			Log.d(TAG, "DeliciousElectronsActivity.onCreate");
+			Log.i(TAG, "DeliciousElectronsActivity.onCreate");
 		}
 
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_delicious_electrons);
 		
-		mAppImageView = (ImageView)findViewById(R.id.app_image);
-		mSaveButton = (Button)findViewById(R.id.msg_save_button);
-        mTestButton = (Button)findViewById(R.id.test_button);
-        Button tutorialButton = (Button)findViewById(R.id.tutorial_button);
-		mMsgEditText = (EditText)findViewById(R.id.power_connected_msg_edit);
-        mClearImageView = (ImageView)findViewById(R.id.clear_image);
+		mAppImageView = findViewById(R.id.app_image);
+		mSaveButton = findViewById(R.id.msg_save_button);
+        mTestButton = findViewById(R.id.test_button);
+        Button tutorialButton = findViewById(R.id.tutorial_button);
+		mMsgEditText = findViewById(R.id.power_connected_msg_edit);
+        mClearImageView = findViewById(R.id.clear_image);
 		
 		mSaveButton.setOnClickListener(this);
         mTestButton.setOnClickListener(this);

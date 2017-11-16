@@ -3,7 +3,7 @@ package com.github.espiandev.showcaseview;
 import android.app.Activity;
 import android.view.View;
 
-@SuppressWarnings("unused")
+@SuppressWarnings({"unused", "WeakerAccess"})
 public class ShowcaseViewBuilder {
 
     private final ShowcaseView showcaseView;

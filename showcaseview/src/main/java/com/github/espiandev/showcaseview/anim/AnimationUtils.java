@@ -8,6 +8,7 @@ import com.nineoldandroids.animation.AnimatorSet;
 import com.nineoldandroids.animation.ObjectAnimator;
 import com.nineoldandroids.view.ViewHelper;
 
+@SuppressWarnings("WeakerAccess")
 public class AnimationUtils {
 
     private static final int DEFAULT_DURATION = 300;
